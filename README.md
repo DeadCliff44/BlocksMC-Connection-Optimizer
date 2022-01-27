@@ -1,6 +1,3 @@
-# BlocksMC-Connection-Optimizer
-A Waterfall proxy to enhance the users connection to servers!
-
 # How to setup:
 Launch a Windows or Linux VPS on Amazon Web Services or Google Cloud and download the files and run!
 
