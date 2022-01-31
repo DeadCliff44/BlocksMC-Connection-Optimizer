@@ -48,5 +48,5 @@ disabled_commands:
 servers:
   blocksmc:
     motd: '&1Just another Waterfall - Forced Host'
-    address: minemen.club
+    address: mineman.club
     restricted: false
