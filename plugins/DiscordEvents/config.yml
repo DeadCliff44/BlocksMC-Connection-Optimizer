@@ -36,7 +36,7 @@ intervals:
 #SETUP DISCORD BOT IF YOU DONT KNOW WHAT IS THIS
 #LOOK AT SETUP SECTION ON SPIGOT PAGE
 discord:
-  bot-token: "OTM4NjIyOTEyNjQ1MTkzNzM4.Yfs-tQ.vcU8BEoUapxPfhLsp8Bcu79D3LU"
+  bot-token: ""
   prefix: "."
   status-type: "DEFAULT" #DEFAULT, WATCHING, LISTENING
   status-text: "Minecraft"
