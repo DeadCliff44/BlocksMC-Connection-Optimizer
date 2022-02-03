@@ -1,0 +1,144 @@
+# Plugin by LIPETL.EU version 1.3
+# Discord: BESSGEORG#9763
+
+#DO NOT TOUCH THIS!
+config-version: 1.1
+#Set server name
+server-name: "BlocksMC Proxy"
+
+#If you are using redis, true on just one proxy
+bot-commands: true
+
+#Enable which events do you like to see
+enabled-events:
+  - tps
+  - registrations
+  - status
+  - join
+  - notify
+  - switch
+  - leave
+  - first
+  - chat
+  - peak
+  - session-lenght
+
+#If you want registration event you might set true
+lobby-server: true
+
+#Interval of automatic events in MINUTES
+intervals:
+  events-rate: 1
+  peak-check-rate: 1
+  peak-report: 1
+
+#! IMPORTANT !
+#SETUP DISCORD BOT IF YOU DONT KNOW WHAT IS THIS
+#LOOK AT SETUP SECTION ON SPIGOT PAGE
+discord:
+  bot-token: "OTM4NjIyOTEyNjQ1MTkzNzM4.Yfs-tQ.vcU8BEoUapxPfhLsp8Bcu79D3LU"
+  prefix: "."
+  status-type: "DEFAULT" #DEFAULT, WATCHING, LISTENING
+  status-text: "Minecraft"
+  bot-activity: "ONLINE" #IDLE, INVISIBLE, ONLINE, DO_NOT_DISTURB
+  guild-id: "938547236168683561"
+  log-channel-id: "938623639824236594"
+  admin-log-channel-id: "938623678210506762"
+  staff:
+    - "857545770017751060"
+  chat-option: true
+  chat-log: true
+  chat-log-channel-id: "938623751233351710"
+  chat-channel-id: "938623792253665310"
+  chat-format: "&8[&bDiscord&8] &f%sender%&7 > &r%message%"
+  chat-log-format: "[%server%] %sender% > %message%"
+
+#Customize discord embeds
+  status:
+    title: "Current Status"
+    link: "https://google.com"
+    image: "https://cdn.discordapp.com/emojis/507340024786845706.png?v=1"
+    text:
+    - "__%server%__\n"
+    - "> Total servers: __%servers%__\n"
+    - "> Total Online servers: %serversonline%\n"
+    - "> Total Online: **%online%**\n"
+    - "> Uptime: **%uptime%**\n"
+    - "> CPU: **%cpu%**\n"
+    - "> RAM: %memory%\n"
+    footer: "TPS "
+    admin-log: true
+    staff-cmd: true
+
+  player:
+    staff-cmd: true
+
+  list:
+    header: "Online players: %online%\n"
+    player-line: "%player%, "
+    end-line: "%player%"
+    staff-cmd: false
+
+  registrations:
+    title: "My-Server.com"
+    link: "https://google.com"
+    image: "https://cdn.discordapp.com/emojis/507340024786845706.png?v=1"
+    text:
+    - "> New registered players: **%registered%**"
+    footer: "Stats "
+    admin-log: false
+
+  join:
+    text: "**%player%** just joined the game!"
+    footer: "My-Server.com"
+    admin-log: false
+
+  peak:
+    text:
+    - "**Today** current peak: **%today_peak%** players!"
+    - "**Month** current peak: **%month_peak%** players!"
+    - "**Week** current peak: **%week_peak%** players!"
+    footer: "My-Server.com"
+    admin-log: false
+
+  leave:
+    text: "**%player%** just left the game! (played %playtime% minutes)"
+    footer: "My-Server.com"
+    admin-log: false
+
+  chat:
+    format: "[Minecraft] %sender% > %message%"
+
+  switch:
+    text: "The **%player%** switched from server %from% to %target%!"
+    footer: "My-Server.com"
+    admin-log: false
+
+#Customize discord embeds color
+  colors:
+    online-color: "#27F08F"
+    offline-color: "#D81F1F"
+    maintance-color: "#000000"
+    main-color: "#000000"
+    status-color: "#000000"
+    join-color: "#000000"
+    switch-color: "#000000"
+    register-color: "#000000"
+    leave-color: "#000000"
+    kick-color: "#000000"
+    peak-color: "#000000"
+
+#Customize messages
+  messages:
+    online-title: "The server started successfully!"
+    offline-title: "The server is now offline..."
+    online-text: "> Server: __%server%__"
+    offline-text: "> Server: __%server%__"
+    online-image: "https://imgur.com/hjkl"
+    offline-image: "https://imgur.com/hjkl"
+    online-icon: "https://imgur.com/hjkl"
+    offline-icon: "https://imgur.com/hjkl"
+
+minecraft:
+  find-player: "%player% is now on %server%"
+  notfound-player: "%player% not found on proxy..."
